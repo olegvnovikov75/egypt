@@ -13,7 +13,7 @@ class LinkGrab(HTMLParser):
         if tag in ('a', 'link'):
             d = dict(attrs)
             href = d.get('href', '')
-            if href and not href.startswith(('http', 'mailto:', '#', 'tel:')):
+            if href and not href.startswith(('http', 'mailto:', '#', 'tel:', 'data:')):
                 self.links.append(href)
 
 pages, broken, total = [], [], 0

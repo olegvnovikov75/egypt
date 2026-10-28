@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О проекте — КЕМЕТ · мифология Древнего Египта</title>
+<meta name="description" content="О проекте КЕМЕТ: энциклопедия египетской мифологии, собранная ИИ-командой за одну ночь по аналогии со Скандиком.">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav__logo" href="index.html">☥ КЕМЕТ</a>
+  <div class="nav__links">
+    <a href="gods.html">Боги</a>
+    <a href="symbols.html">Символы</a>
+    <a href="death.html">Смерть и Дуат</a>
+    <a href="arch.html">Архитектура</a>
+    <a href="cats.html">Кошки</a>
+    <a href="compare.html">Египет × Скандинавия</a>
+    <a href="sources.html">Источники</a>
+    <a class="nav__switch" href="https://olegvnovikov75.github.io/scandic/" title="Север — сайт о скандинавской мифологии">Север ⟷</a>
+  </div>
+  <button class="nav__burger" aria-label="меню">☰</button>
+</nav>
+
+<main class="main">
+  <header class="page-hero">
+    <div class="breadcrumbs"><a href="index.html">Главная</a> / О проекте</div>
+    <div class="page-hero__glyph">☥</div>
+    <h1 class="hero__title">О проекте</h1>
+    <p class="hero__sub">КЕМЕТ — «чёрная земля». Так египтяне называли свою страну. Мы назвали так этот сайт.</p>
+  </header>
+
+  <section class="section">
+    <h2 class="section__title">Что это</h2>
+    <div class="prose">
+      <p class="dropcap">КЕМЕТ — интерактивная энциклопедия мифологии Древнего Египта: боги и богини, сакральные символы, мумии и загробный путь, пирамиды, мастабы, сфинксы и храмы, кошки и их богиня — плюс отдельный сравнительный цикл «Египет × Скандинавия» о том, как две великие традиции говорят об одном и том же.</p>
+      <p>Проект построен <strong>искусственным интеллектом за одну ночь</strong> по заданию Шефа (28.10.2026) — как прямой наследник «<a href="https://olegvnovikov75.github.io/scandic/" target="_blank" rel="noopener">Скандика</a>», нашего же сайта о скандинавской мифологии. Между сайтами сделан переключатель «Север ⟷», потому что страницы сравнения живут ровно на границе двух миров.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">Кто строил</h2>
+    <div class="prose">
+      <p><strong>Гаечка</strong> (модель 87G на Стриксе) — старшая: каркас, дизайн, главная, каталоги разделов, кошки и их богиня, сравнительная страница, приёмка каждой партии.</p>
+      <p><strong>Чип</strong> (модель 27B на X99) — контент: страницы богов, загробного мира, архитектуры и символов партия за партией, с фактчекингом по Википедии и журналом работы (chip_log.md).</p>
+      <p>Каждая страница написана по канону проекта (PLAN.md), вычитана по объёму и живости, проверена скриптом связей. Внизу каждой страницы — источники; первая ссылка всегда Википедия.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">Как смотреть</h2>
+    <div class="prose">
+      <p>Сайт статический: достаточно открыть <code>index.html</code> в браузере или запустить локальный сервер:</p>
+      <p><code>python3 -m http.server 8300</code> — и открыть <a href="http://localhost:8300" target="_blank" rel="noopener">http://localhost:8300</a></p>
+    </div>
+  </section>
+
+  <div class="ornament">☥ 𓋹 ☥</div>
+  <p class="motto">«Смерть — это дверь, а не стена. Мы построили этот сайт, чтобы дверь было видно.»</p>
+</main>
+
+<footer class="footer">
+  <div class="footer__note">КЕМЕТ · проект Гаечки и Чипа · 2026 · ночь с 27 на 28 октября</div>
+</footer>
+</body>
+</html>

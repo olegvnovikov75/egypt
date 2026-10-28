@@ -143,3 +143,99 @@ blockquote{margin:18px 0;padding:14px 22px;border-left:3px solid var(--gold);bac
 .twinband__twin:hover{color:#f4d98c}
 .twinband__twin small{font-family:'Segoe UI',sans-serif;color:#a7b4d4;font-size:12px}
 .twinband__solo{color:#a7b4d4;font-size:13px;font-style:italic}
+/* === SHARED NAV v2 (sites-shared) === */
+/* Единая навигация двух миров: северный полюс всегда слева, южный — справа. */
+.nav{display:flex;align-items:center;gap:16px;flex-wrap:nowrap;padding:10px 22px;position:relative}
+.nav__pole{display:flex;align-items:center;gap:9px;border:none!important;text-decoration:none!important;flex:0 0 auto}
+.pole__med{flex:0 0 36px;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:16px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.pole__med--north{background:linear-gradient(180deg,#0e1c30 0%,#2a4a70 40%,#e8f4ff 41%,#b7d4ee 52%,#33587e 53%,#16273d 100%);border:1px solid rgba(191,224,255,.55)}
+.pole__med--south{background:linear-gradient(90deg,transparent 46%,#3f7fbf 47.5% 52.5%,transparent 53.5%),linear-gradient(180deg,#ffe2b0 0%,#ffab52 38%,#c96f2b 39%,#7a3c14 100%);border:1px solid rgba(255,217,160,.55)}
+.pole__box{display:flex;flex-direction:column;line-height:1.12}
+.pole__name{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:600;letter-spacing:.04em;color:#e0b84c}
+.pole__hint{font-style:normal;font-size:11px;color:#a7b4d4;max-width:170px}
+.nav__pole--far{opacity:.78}
+.nav__pole--far:hover{opacity:1}
+.nav__pole--here{cursor:default}
+.nav__pole--here .pole__name{color:#f4d98c}
+.nav__links{display:flex;flex-wrap:wrap;gap:12px;margin:0 8px;flex:1 1 auto;justify-content:center}
+.nav__links a{border-bottom:none;padding:4px 2px}
+.nav::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,#5f8dd6 0%,#c9a227 45%,#e0b84c 55%,#ff8a3c 100%)}
+@media(max-width:1000px){.pole__hint{display:none}.nav{gap:10px}}
+@media(max-width:760px){
+  .nav__links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(10,17,40,.97);padding:12px 22px;border-bottom:1px solid rgba(224,184,76,.4)}
+  .nav.open .nav__links{display:flex}
+  .nav__burger{display:block;margin-left:8px;background:none;border:1px solid rgba(224,184,76,.4);color:#e0b84c;border-radius:8px;font-size:18px;padding:2px 10px;cursor:pointer}
+}
+@media(min-width:761px){.nav__burger{display:none}}
+/* === SHARED TPL v3 === */
+/* Единый шаблон страницы двух миров (схема Шефа 28.10): шапка-наименование,
+   описание слева, побратим справа, скользящая навигация, смежные темы, мост. */
+
+/* ── шапка-наименование ── */
+.masthead{display:grid;grid-template-columns:1fr minmax(0,auto) 1fr;gap:20px;align-items:center;
+  max-width:1280px;margin:0 auto;padding:34px 24px 22px;position:relative;
+  background:linear-gradient(180deg,rgba(224,184,76,.08),transparent 85%)}
+.masthead::after{content:"";position:absolute;left:24px;right:24px;bottom:0;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(95,141,214,.6) 18%,rgba(224,184,76,.85) 50%,rgba(255,138,60,.6) 82%,transparent)}
+.masthead__center{text-align:center;min-width:0}
+.masthead__glyph{display:block;font-size:26px;color:rgba(159,195,255,.85);margin-bottom:2px}
+.masthead__title{font-family:Georgia,'Times New Roman',serif;font-weight:700;
+  font-size:clamp(34px,4.6vw,56px);letter-spacing:.12em;text-transform:uppercase;
+  background:linear-gradient(110deg,#b8860b 0%,#f4d98c 40%,#fff7dd 50%,#f4d98c 60%,#b8860b 100%);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:goldshimmer 8s ease-in-out infinite}
+@keyframes goldshimmer{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+.mcard{border:1px solid rgba(224,184,76,.35);border-radius:16px;padding:12px 16px;
+  font-size:13.5px;line-height:1.5;color:#a7b4d4;min-height:64px;text-decoration:none!important}
+.mcard b{display:block;font-family:Georgia,serif;color:#e0b84c;font-size:15px;margin-bottom:3px}
+.mcard--here{background:linear-gradient(165deg,rgba(224,184,76,.10),rgba(18,32,74,.55) 55%,rgba(95,141,214,.12))}
+a.mcard--twin{background:linear-gradient(165deg,rgba(95,141,214,.16),rgba(18,32,74,.55) 50%,rgba(63,110,166,.18));
+  color:#9fc3ff;transition:transform .25s,box-shadow .25s,border-color .25s}
+a.mcard--twin small{display:block;color:#a7b4d4;font-size:12px;margin-top:2px}
+a.mcard--twin:hover{transform:translateY(-3px);border-color:#e0b84c;box-shadow:0 8px 22px rgba(224,184,76,.18)}
+.mcard--none{border-style:dashed;opacity:.6;font-style:italic}
+
+/* ── скользящая навигация ── */
+.nav{background-image:linear-gradient(120deg,rgba(63,110,166,.30),rgba(10,17,40,0) 38%,rgba(10,17,40,0) 62%,rgba(224,110,40,.32));
+  background-size:200% 100%;animation:navdrift 24s ease-in-out infinite alternate}
+@keyframes navdrift{from{background-position:0% 0}to{background-position:100% 0}}
+.nav__links{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;justify-content:flex-start;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+.nav__links::-webkit-scrollbar{display:none}
+.nav__links a{position:relative;white-space:nowrap;transition:color .25s}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,#5f8dd6,#e0b84c,#ff8a3c);transform:scaleX(0);transform-origin:50% 50%;transition:transform .3s}
+.nav__links a:hover::after,.nav__links a.on::after,.nav__links a.active::after{transform:scaleX(1)}
+
+/* ── контент: текст слева, картинка справа ── */
+.main.tpl3 .hero-photo{float:right;width:min(360px,40vw);margin:0 0 16px 24px;border-radius:14px}
+.main.tpl3::after{content:"";display:table;clear:both}
+@media(max-width:760px){.main.tpl3 .hero-photo{float:none;width:100%;margin:0 0 16px}}
+
+/* ── разделители и нижние строки ── */
+.rule{border:0;height:1px;margin:30px auto;max-width:1060px;
+  background:linear-gradient(90deg,transparent,rgba(224,184,76,.5),transparent)}
+.related,.bridge{max-width:1060px;margin:0 auto;padding:16px 20px;
+  border:1px dashed rgba(224,184,76,.4);border-radius:16px;
+  background:linear-gradient(120deg,rgba(95,141,214,.10),transparent 45%,rgba(255,138,60,.10))}
+.related h3,.bridge h3{font-family:Georgia,serif;color:#e0b84c;font-size:15px;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:10px}
+.related a{display:inline-block;margin:0 16px 6px 0}
+.bridge__row{display:flex;align-items:center;flex-wrap:wrap;gap:12px 16px}
+.bridge__own b{font-family:Georgia,serif;color:#f4d98c;font-size:16px;display:block;line-height:1.1}
+.bridge__own small{color:#a7b4d4;font-size:12px}
+.bridge__vs{color:#a7b4d4;font-size:18px}
+a.bridge__twin{border:1px solid rgba(159,195,255,.4);border-radius:12px;padding:8px 14px;color:#9fc3ff;
+  font-family:Georgia,serif;font-size:15px;text-decoration:none!important;transition:transform .2s,border-color .2s}
+a.bridge__twin small{display:block;color:#a7b4d4;font-family:'Segoe UI',sans-serif;font-size:12px}
+a.bridge__twin:hover{transform:translateY(-2px);border-color:#e0b84c}
+.bridge__home{margin-left:auto;color:#e0b84c;border:1px solid rgba(224,184,76,.5);border-radius:20px;
+  padding:4px 14px;font-size:14px;white-space:nowrap}
+.bridge__solo{font-style:italic;color:#a7b4d4;font-size:13.5px}
+
+@media(max-width:900px){
+  .masthead{grid-template-columns:1fr}
+  .masthead__center{order:-1}
+}
+@media(prefers-reduced-motion:reduce){
+  .masthead__title,.nav{animation:none}
+}

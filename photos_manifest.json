@@ -278,5 +278,45 @@
   "artist": "Wknight94 talk",
   "license": "CC BY-SA 3.0",
   "wiki": "Djoser step pyramid Saqqara"
+ },
+ "gods/ra.html": {
+  "file": "img/gods-ra.jpg",
+  "commons_file": "Ra Barque.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Ra_Barque.jpg",
+  "artist": "неизвестный автор",
+  "license": "Public domain",
+  "wiki": "winged sun disk temple egypt"
+ },
+ "gods/maat.html": {
+  "file": "img/gods-maat.jpg",
+  "commons_file": "Maat-E 4436-IMG 7942-white.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Maat-E_4436-IMG_7942-white.jpg",
+  "artist": "Rama",
+  "license": "CC BY-SA 3.0 fr",
+  "wiki": "maat goddess statue egypt museum"
+ },
+ "death/duat.html": {
+  "file": "img/death-duat.png",
+  "commons_file": "Book of Gates, 4th Division, 5th Hour, Tomb of Seti I.png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Book_of_Gates,_4th_Division,_5th_Hour,_Tomb_of_Seti_I.png",
+  "artist": "Central16",
+  "license": "CC BY 4.0",
+  "wiki": "book of gates egypt tomb"
+ },
+ "death/sarcophagi.html": {
+  "file": "img/death-sarcophagi.jpg",
+  "commons_file": "Sarcophagus of Sennedjem, painted lid panel, Vatican Museums.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Sarcophagus_of_Sennedjem,_painted_lid_panel,_Vatican_Museums.jpg",
+  "artist": "Wilfredor",
+  "license": "CC0",
+  "wiki": "egyptian sarcophagus painted lid"
+ },
+ "arch/mastaba.html": {
+  "file": "img/arch-mastaba.jpg",
+  "commons_file": "Limestone block relief from a wall of the dismantled mastaba tomb-chapel of Tepemankh II. It shows part of a market scene. From Saqqara, Egypt. 5th Dynasty. Petrie Museum.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Limestone_block_relief_from_a_wall_of_the_dismantled_mastaba_tomb-chapel_of_Tepemankh_II._It_shows_part_of_a_market_scene._From_Saqqara,_Egypt._5th_Dynasty._Petrie_Museum.jpg",
+  "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+  "license": "CC BY-SA 4.0",
+  "wiki": "mastaba saqqara egypt"
  }
 }

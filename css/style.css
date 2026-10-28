@@ -117,3 +117,11 @@ blockquote{margin:18px 0;padding:14px 22px;border-left:3px solid var(--gold);bac
   .main{padding:0 16px 40px}
   .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
 }
+
+/* --- фотографии Wikimedia Commons --- */
+.hero-photo { margin: 1.6rem 0 0; }
+.hero-photo img { width: 100%; max-height: 460px; object-fit: cover;
+  border-radius: 14px; border: 1px solid var(--line); }
+.hero-photo figcaption { font-size: .85rem; color: var(--muted);
+  text-align: center; margin-top: .45rem; line-height: 1.5; }
+.hero-photo figcaption a { color: var(--sky); }

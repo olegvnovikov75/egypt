@@ -1,0 +1,282 @@
+{
+ "gods/osiris.html": {
+  "file": "img/gods-osiris.png",
+  "commons_file": "Osiris (God).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Osiris_(God).png",
+  "artist": "Eternal Space",
+  "license": "CC0",
+  "wiki": "Osiris"
+ },
+ "gods/isis.html": {
+  "file": "img/gods-isis.jpg",
+  "commons_file": "Pluto Serapis and Persephone Isis Heraklion museum.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Pluto_Serapis_and_Persephone_Isis_Heraklion_museum.jpg",
+  "artist": "Jebulon",
+  "license": "CC0",
+  "wiki": "Isis"
+ },
+ "gods/horus.html": {
+  "file": "img/gods-horus.jpg",
+  "commons_file": "Dioses egipcios, Amón y Horus - A740864.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Dioses_egipcios,_Am%C3%B3n_y_Horus_-_A740864.jpg",
+  "artist": "Rjcastillo",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Horus"
+ },
+ "gods/set.html": {
+  "file": "img/gods-set.png",
+  "commons_file": "Set (God).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Set_(God).png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Set (deity)"
+ },
+ "gods/thoth.html": {
+  "file": "img/gods-thoth.png",
+  "commons_file": "Thoth (God).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Thoth_(God).png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Thoth"
+ },
+ "gods/anubis.html": {
+  "file": "img/gods-anubis.jpg",
+  "commons_file": "Roman statue of Anubis, Gregorian Egyptian Museum, Vatican Museums.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Roman_statue_of_Anubis,_Gregorian_Egyptian_Museum,_Vatican_Museums.jpg",
+  "artist": "Wilfredor",
+  "license": "CC0",
+  "wiki": "Anubis jackal statue Egyptian Museum"
+ },
+ "gods/sekmet.html": {
+  "file": "img/gods-sekmet.jpg",
+  "commons_file": "Sekhmet, Egyptian Goddess.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Sekhmet,_Egyptian_Goddess.jpg",
+  "artist": "Neek-Theri",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Sekhmet"
+ },
+ "gods/hathor.html": {
+  "file": "img/gods-hathor.jpg",
+  "commons_file": "Temple of Hathor, Reliefs 2, Dendera, Egypt.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Temple_of_Hathor,_Reliefs_2,_Dendera,_Egypt.jpg",
+  "artist": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0",
+  "wiki": "Hathor"
+ },
+ "gods/ptah.html": {
+  "file": "img/gods-ptah.jpg",
+  "commons_file": "King Ramesses II and the God Ptah, Ny Carlsberg Glyptotek, Copenhagen, 20220618 1031 6995.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:King_Ramesses_II_and_the_God_Ptah,_Ny_Carlsberg_Glyptotek,_Copenhagen,_20220618_1031_6995.jpg",
+  "artist": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Ptah"
+ },
+ "gods/amun.html": {
+  "file": "img/gods-amun.jpg",
+  "commons_file": "Buste du dieu Amon (Louvre E 10377).jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Buste_du_dieu_Amon_(Louvre_E_10377).jpg",
+  "artist": "JackyM59",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Amun"
+ },
+ "gods/sobek.html": {
+  "file": "img/gods-sobek.png",
+  "commons_file": "Sobek (God).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Sobek_(God).png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Sobek"
+ },
+ "gods/nut.html": {
+  "file": "img/gods-nut.png",
+  "commons_file": "Goddess Nut.png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Goddess_Nut.png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Nut (sky goddess)"
+ },
+ "gods/geb.html": {
+  "file": "img/gods-geb.png",
+  "commons_file": "Geb (God).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Geb_(God).png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Geb"
+ },
+ "gods/apophis.html": {
+  "file": "img/gods-apophis.png",
+  "commons_file": "Ra slays Apep (tomb scene in Deir el-Medina)(improved contrast).png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Ra_slays_Apep_(tomb_scene_in_Deir_el-Medina)(improved_contrast).png",
+  "artist": "user:Hajor~commonswiki",
+  "license": "CC BY-SA 3.0",
+  "wiki": "Apep"
+ },
+ "symbols/ankh.html": {
+  "file": "img/symbols-ankh.png",
+  "commons_file": "Ankh, Djed & Was.png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Ankh,_Djed_%26_Was.png",
+  "artist": "Eternal Space",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Ankh"
+ },
+ "symbols/udjat.html": {
+  "file": "img/symbols-udjat.jpg",
+  "commons_file": "Eye of Horus clay mould, 20th Dynasty (1186 BC - 1069 BCE), Tell el-Yahudiya, Brighton Museum.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Eye_of_Horus_clay_mould,_20th_Dynasty_(1186_BC_-_1069_BCE),_Tell_el-Yahudiya,_Brighton_Museum.jpg",
+  "artist": "SpeakingArch",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Eye of Horus"
+ },
+ "symbols/djed.html": {
+  "file": "img/symbols-djed.png",
+  "commons_file": "Djed pillar.png",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Djed_pillar.png",
+  "artist": "Eternal Space",
+  "license": "CC0",
+  "wiki": "Djed"
+ },
+ "symbols/tyet.html": {
+  "file": "img/symbols-tyet.jpg",
+  "commons_file": "Tit (Isis knot) amulet MET DP109370.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Tit_(Isis_knot)_amulet_MET_DP109370.jpg",
+  "artist": "неизвестный автор",
+  "license": "CC0",
+  "wiki": "Tyet"
+ },
+ "symbols/was.html": {
+  "file": "img/symbols-was.jpg",
+  "commons_file": "Faience 'was'-sceptre of Thuthmosis III (8570267204).jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Faience_%27was%27-sceptre_of_Thuthmosis_III_(8570267204).jpg",
+  "artist": "akhenatenator",
+  "license": "CC0",
+  "wiki": "Was sceptre"
+ },
+ "symbols/scarab.html": {
+  "file": "img/symbols-scarab.jpg",
+  "commons_file": "Amulet depicting a scarab (?), faience - Museo Egizio, Turin P 6768 p03.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Amulet_depicting_a_scarab_(%3F),_faience_-_Museo_Egizio,_Turin_P_6768_p03.jpg",
+  "artist": "неизвестный автор",
+  "license": "CC0",
+  "wiki": "Egyptian scarab amulet faience"
+ },
+ "arch/giza.html": {
+  "file": "img/arch-giza.jpg",
+  "commons_file": "Giza Pyramids during \"Forever is Now\" exhibition.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Giza_Pyramids_during_%22Forever_is_Now%22_exhibition.jpg",
+  "artist": "Mona Hassan Abo-Abda",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Pyramids of Giza view"
+ },
+ "arch/sphinx.html": {
+  "file": "img/arch-sphinx.jpg",
+  "commons_file": "Great Sphinx (أبو الهول).jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_(%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84).jpg",
+  "artist": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Great Sphinx of Giza"
+ },
+ "arch/karnak.html": {
+  "file": "img/arch-karnak.jpg",
+  "commons_file": "Templo de Karnak, Luxor, Egipto, 2022-04-03, DD 144.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Templo_de_Karnak,_Luxor,_Egipto,_2022-04-03,_DD_144.jpg",
+  "artist": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Karnak"
+ },
+ "arch/luxor.html": {
+  "file": "img/arch-luxor.jpg",
+  "commons_file": "Luxor Temple R04.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Luxor_Temple_R04.jpg",
+  "artist": "Marc Ryckaert",
+  "license": "CC BY 3.0",
+  "wiki": "Luxor Temple"
+ },
+ "arch/abu-simbel.html": {
+  "file": "img/arch-abu-simbel.jpg",
+  "commons_file": "Templo de Ramsés II, Abu Simbel, Egipto, 2022-04-02, DD 26-28 HDR.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Templo_de_Rams%C3%A9s_II,_Abu_Simbel,_Egipto,_2022-04-02,_DD_26-28_HDR.jpg",
+  "artist": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "wiki": "Abu Simbel"
+ },
+ "cats/bastet.html": {
+  "file": "img/cats-bastet.jpg",
+  "commons_file": "Amulet depicting the goddess Sekhmet or Bastet, Egyptian blue - Museo Egizio, Turin C 286 p03.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Amulet_depicting_the_goddess_Sekhmet_or_Bastet,_Egyptian_blue_-_Museo_Egizio,_Turin_C_286_p03.jpg",
+  "artist": "неизвестный автор",
+  "license": "CC0",
+  "wiki": "Bastet"
+ },
+ "cats/house.html": {
+  "file": "img/cats-house.jpg",
+  "commons_file": "Ancient Egypt Bronze Cat Statues (28133007473).jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Ancient_Egypt_Bronze_Cat_Statues_(28133007473).jpg",
+  "artist": "Gary Todd from Xinzheng, China",
+  "license": "CC0",
+  "wiki": "ancient Egyptian cat bronze statue"
+ },
+ "index.html": {
+  "file": "img/index.jpg",
+  "commons_file": "All Gizah Pyramids.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+  "artist": "Ricardo Liberato",
+  "license": "CC BY-SA 2.0",
+  "wiki": "All Gizah Pyramids"
+ },
+ "death/mummification.html": {
+  "file": "img/death-mummification.jpg",
+  "commons_file": "Upper part of mummy mask and bust cartonnage. Mummification scene on the chest, cartonnage - Museo Egizio (Turin) C 2250 p01.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Upper_part_of_mummy_mask_and_bust_cartonnage._Mummification_scene_on_the_chest,_cartonnage_-_Museo_Egizio_(Turin)_C_2250_p01.jpg",
+  "artist": "неизвестный автор",
+  "license": "CC0",
+  "wiki": "Egyptian mummy cartonnage"
+ },
+ "death/canopic.html": {
+  "file": "img/death-canopic.jpg",
+  "commons_file": "Canopic Jar of Minmose MET DP116784.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Canopic_Jar_of_Minmose_MET_DP116784.jpg",
+  "artist": "неизвестный автор",
+  "license": "CC0",
+  "wiki": "canopic jars Egypt museum"
+ },
+ "death/book-of-dead.html": {
+  "file": "img/death-book-of-dead.jpg",
+  "commons_file": "Fragment from the Egyptian Book of the Dead – Papyrus of Ani, Louvre, Paris, France.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Fragment_from_the_Egyptian_Book_of_the_Dead_%E2%80%93_Papyrus_of_Ani,_Louvre,_Paris,_France.jpg",
+  "artist": "Wilfredor",
+  "license": "CC0",
+  "wiki": "Book of the Dead papyrus hieroglyphs"
+ },
+ "death/judgment.html": {
+  "file": "img/death-judgment.jpg",
+  "commons_file": "The Heart of Ani Being Weighed in the Balance. (1902) - TIMEA.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:The_Heart_of_Ani_Being_Weighed_in_the_Balance._(1902)_-_TIMEA.jpg",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 2.5",
+  "wiki": "weighing of the heart Ani papyrus"
+ },
+ "death/opening-of-mouth.html": {
+  "file": "img/death-opening-of-mouth.jpg",
+  "commons_file": "Fragment of a tomb relief showing a funerary ritual scene. It depicts meat-offering of the \"opening of the mouth ceremony\". Late 18th Dynasty. From Egypt. The Petrie Museum of Egyptian Archaeology, London.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Fragment_of_a_tomb_relief_showing_a_funerary_ritual_scene._It_depicts_meat-offering_of_the_%22opening_of_the_mouth_ceremony%22._Late_18th_Dynasty._From_Egypt._The_Petrie_Museum_of_Egyptian_Archaeology,_London.jpg",
+  "artist": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+  "license": "CC BY-SA 4.0",
+  "wiki": "opening of the mouth ceremony relief"
+ },
+ "death/fields-of-reeds.html": {
+  "file": "img/death-fields-of-reeds.jpg",
+  "commons_file": "Papyrus Ani curs hiero.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Papyrus_Ani_curs_hiero.jpg",
+  "artist": "en:user:Flembles",
+  "license": "Public domain",
+  "wiki": "book of the dead papyrus field grain"
+ },
+ "arch/djoser.html": {
+  "file": "img/arch-djoser.jpg",
+  "commons_file": "Pyramid of Djoser 2010.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Pyramid_of_Djoser_2010.jpg",
+  "artist": "Wknight94 talk",
+  "license": "CC BY-SA 3.0",
+  "wiki": "Djoser step pyramid Saqqara"
+ }
+}

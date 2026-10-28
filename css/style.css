@@ -127,3 +127,4 @@ blockquote{margin:18px 0;padding:14px 22px;border-left:3px solid var(--gold);bac
 .hero-photo figcaption a { color: var(--sky); }
 
 .see-also a.sister{color:var(--sky);border:1px solid var(--line);border-radius:14px;padding:2px 10px}
+.hero__alias{margin:6px 0 2px;font-size:15px;font-style:italic;color:var(--muted)}

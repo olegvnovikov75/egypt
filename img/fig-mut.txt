@@ -1,0 +1,4 @@
+<figure class="hero-photo">
+<img src="../img/gods-mut.jpg" alt="Мут — богиня-мать фиванской триады" loading="lazy" decoding="async">
+<figcaption>Мут в двойной короне Верхнего и Нижнего Египта — так её высекали в Карнаке: владычица обеих земель и мать царя. Фото: <a href="https://commons.wikimedia.org/wiki/File:Statue_of_Sekhmet,_18th_Dynasty,_about_1390-1352_BCE,_From_Thebes,_Karnak,_temple_of_Mut.jpg">SpeakingArch</a> · Wikimedia Commons · CC BY-SA 4.0</figcaption>
+</figure>

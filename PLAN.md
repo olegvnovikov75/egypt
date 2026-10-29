@@ -15,6 +15,7 @@ arch.html             Гаечка   — архитектура: мастабы/
 cats.html             Гаечка   — кошки в Египте (→ cats/bastet.html, cats/house.html)
 compare.html          Гаечка   — Египет × Скандинавия (по материалам Шефа 12.10)
 about.html sources.html glossary.html 404.html   — Гаечка
+gods/mut.html         Гаечка   — Мут, мать фиванской триады (по слову Шефа 28.10)
 gods/ra.html          Гаечка   — ЭТАЛОН странице бога (Чип повторяет формат)
 gods/  osiris isis horus set thoth anubis bastet sekmet hathor maat ptah amun sobek nut geb apophis   — Чип, партия 1
 death/ mummification canopic book-of-dead duat judgment opening-of-mouth sarcophagi fields-of-reeds    — Чип, партия 2

@@ -16,12 +16,12 @@ cats.html             Гаечка   — кошки в Египте (→ cats/ba
 compare.html          Гаечка   — Египет × Скандинавия (по материалам Шефа 12.10)
 about.html sources.html glossary.html 404.html   — Гаечка
 gods/mut.html         Гаечка   — Мут, мать фиванской триады (по слову Шефа 28.10)
-gods/khonsu.html      Чип      — Хонсу, лунный сын триады (партия I)
-gods/bes.html         Чип      — Бес, домовой защитник дома и рожениц (партия I)
-gods/taweret.html     Чип      — Таурт, бегемотиха-хранительница (партия I)
-gods/hapi.html        Чип      — Хапи, бог разлива Нила (партия I)
-gods/wadjet.html      Чип      — Уаджит, кобра Нижнего Египта (партия I)
-gods/nekhbet.html     Чип      — Нехбет, стервятник Верхнего Египта (партия I)
+gods/khonsu.html      Чип      — Хонсу, лунный сын триады (партия I · готово 29.10)
+gods/bes.html         Чип      — Бес, домовой защитник дома и рожениц (партия I · готово 29.10)
+gods/taweret.html     Чип      — Таурт, бегемотиха-хранительница (партия I · готово 29.10)
+gods/hapi.html        Чип      — Хапи, бог разлива Нила (партия I · готово 29.10)
+gods/wadjet.html      Чип      — Уаджит, кобра Нижнего Египта (партия I · готово 29.10)
+gods/nekhbet.html     Чип      — Нехбет, стервятник Верхнего Египта (партия I · готово 29.10)
 gods/ra.html          Гаечка   — ЭТАЛОН странице бога (Чип повторяет формат)
 gods/  osiris isis horus set thoth anubis bastet sekmet hathor maat ptah amun sobek nut geb apophis   — Чип, партия 1
 death/ mummification canopic book-of-dead duat judgment opening-of-mouth sarcophagi fields-of-reeds    — Чип, партия 2

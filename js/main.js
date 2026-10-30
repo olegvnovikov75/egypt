@@ -31,89 +31,123 @@
   }
 })();
 
-/* === SHARED MAST-SLIDE v1 === */
-/* Шапка-слайдер (идея Шефа 30.10): сдвигаешь верхнюю строку влево —
-   из-за правого края выезжает карточка побратима; отпустил за порогом —
-   переправляет на страницу другой веры. Палец и мышь. */
+/* === SHARED MAST-SLIDE v2 === */
+/* Слайдер «верхней строки» (идея Шефа 30.10): две зоны —
+   шапка-наименование (.masthead) и верхняя строка навигации (.nav).
+   Тянешь влево пальцем или мышью → выезжает золотая карточка побратима
+   (или всего соседнего сайта); отпустил за порогом — переправляет.
+   Клавиатура: Alt + →. */
 (function () {
   'use strict';
-  var mast = document.querySelector('.masthead[data-twin-href]');
-  if (!mast) return;
-  var slide = mast.querySelector('.mslide');
-  var peek = mast.querySelector('.mpeek');
-  var href = mast.getAttribute('data-twin-href');
-  if (!slide || !peek || !href) return;
+  var zones = Array.prototype.slice.call(
+    document.querySelectorAll('.masthead[data-twin-href], .nav[data-nav-href]'));
+  if (!zones.length) return;
 
-  var x0 = 0, y0 = 0, px = 0, active = false, decided = false, horiz = false, t0 = 0, gone = false;
-
-  function set(p) { // p: 0..1 — насколько уехали
-    var w = mast.clientWidth || 1;
-    if (p > 1) p = 1; if (p < 0) p = 0;
-    slide.style.transform = 'translate3d(' + (-p * w) + 'px,0,0)';
-    peek.style.transform = 'translate3d(' + ((1 - p) * w) + 'px,0,0)';
-    slide.style.opacity = String(1 - 0.55 * p);
-    peek.style.opacity = String(0.35 + 0.65 * p);
-  }
-  function snap(to, ms) {
-    slide.style.transition = peek.style.transition = 'transform ' + ms + 'ms ease, opacity ' + ms + 'ms ease';
-    set(to);
-  }
-  function start() {
-    slide.style.transition = peek.style.transition = 'none';
-    x0 = y0 = 0; px = 0; decided = false; horiz = false; t0 = Date.now();
-  }
-  function down(cx, cy, e) {
-    if (gone) return;
-    if (e && e.target && e.target.closest && e.target.closest('a,button')) return;
-    active = true; start();
-    x0 = cx; y0 = cy;
-  }
-  function move(cx, cy) {
-    if (!active || gone) return;
-    var ddx = cx - x0, ddy = cy - y0;
-    if (!decided) {
-      if (Math.abs(ddx) + Math.abs(ddy) < 10) return;
-      decided = true;
-      horiz = Math.abs(ddx) > Math.abs(ddy) * 1.4;
-    }
-    if (!horiz) return;
-    var w = mast.clientWidth || 1;
-    px = Math.max(0, Math.min(w, -ddx));      // тянем только влево
-    set(px / w);
-  }
-  function up() {
-    if (!active || gone) return;
-    active = false;
-    if (!horiz) return;
-    var w = mast.clientWidth || 1;
-    var v = px / Math.max(60, Date.now() - t0); // px/мс
-    if (px > w * 0.38 || (v > 0.55 && px > 60)) {
-      gone = true;
-      snap(1, 180);
-      setTimeout(function () { location.href = href; }, 190);
+  function attach(zone) {
+    var isMast = zone.classList.contains('masthead');
+    var href = zone.getAttribute('data-twin-href') || zone.getAttribute('data-nav-href');
+    if (!href) return;
+    var track = isMast ? zone.querySelector('.mslide') : null;
+    var peek;
+    if (isMast) {
+      peek = zone.querySelector('.mpeek');
     } else {
-      snap(0, 220);
+      var lab = zone.getAttribute('data-nav-label') || 'на другой берег';
+      zone.insertAdjacentHTML('afterbegin',
+        '<div class="npeekwrap"><div class="npeek" aria-hidden="true"><b></b><small>отпусти — переправишь →</small></div></div>');
+      peek = zone.querySelector('.npeek');
+      peek.querySelector('b').textContent = lab;
     }
+    if (!peek) return;
+
+    var x0 = 0, y0 = 0, px = 0, active = false, decided = false, horiz = false,
+        t0 = 0, gone = false, moved = false;
+
+    function set(p) {
+      var w = zone.clientWidth || 1;
+      if (p > 1) p = 1; if (p < 0) p = 0;
+      peek.style.transform = 'translate3d(' + ((1 - p) * w) + 'px,0,0)';
+      peek.style.opacity = String(0.35 + 0.65 * p);
+      if (track) {
+        track.style.transform = 'translate3d(' + (-p * w) + 'px,0,0)';
+        track.style.opacity = String(1 - 0.55 * p);
+      }
+    }
+    function snap(to, ms) {
+      var tr = 'transform ' + ms + 'ms ease, opacity ' + ms + 'ms ease';
+      peek.style.transition = tr;
+      if (track) track.style.transition = tr;
+      set(to);
+    }
+    function down(cx, cy, e) {
+      if (gone) return;
+      if (e && e.target && e.target.closest &&
+          e.target.closest('button,.nav__burger,.nav__links')) return;
+      active = true; decided = false; horiz = false; px = 0; t0 = Date.now();
+      x0 = cx; y0 = cy;
+      track && (track.style.transition = 'none');
+      peek.style.transition = 'none';
+      document.body.style.userSelect = 'none';
+    }
+    function move(cx, cy) {
+      if (!active || gone) return;
+      var ddx = cx - x0, ddy = cy - y0;
+      if (!decided) {
+        if (Math.abs(ddx) + Math.abs(ddy) < 10) return;
+        decided = true;
+        horiz = Math.abs(ddx) > Math.abs(ddy) * 1.4;
+      }
+      if (!horiz) return;
+      var w = zone.clientWidth || 1;
+      px = Math.max(0, Math.min(w, -ddx));
+      set(px / w);
+    }
+    function up() {
+      if (!active || gone) return;
+      active = false;
+      document.body.style.userSelect = '';
+      if (!horiz) return;
+      var w = zone.clientWidth || 1;
+      if (px > 8) moved = true;
+      setTimeout(function () { moved = false; }, 400);
+      var v = px / Math.max(60, Date.now() - t0);
+      if (px > w * 0.3 || (v > 0.5 && px > 50)) {
+        gone = true;
+        snap(1, 170);
+        setTimeout(function () { location.href = href; }, 180);
+      } else {
+        snap(0, 220);
+      }
+    }
+
+    // чтобы затяжка не «рождала» клик по ссылке под пальцем
+    zone.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+
+    zone.addEventListener('touchstart', function (e) {
+      if (e.touches.length === 1) down(e.touches[0].clientX, e.touches[0].clientY, e);
+    }, { passive: true });
+    zone.addEventListener('touchmove', function (e) {
+      if (active && horiz) e.preventDefault();
+      if (e.touches.length === 1) move(e.touches[0].clientX, e.touches[0].clientY);
+    }, { passive: false });
+    zone.addEventListener('touchend', up);
+    zone.addEventListener('touchcancel', up);
+
+    var mdown = false;
+    zone.addEventListener('mousedown', function (e) { down(e.clientX, e.clientY, e); mdown = true; });
+    window.addEventListener('mousemove', function (e) { if (mdown) move(e.clientX, e.clientY); });
+    window.addEventListener('mouseup', function () { if (mdown) { mdown = false; up(); } });
   }
 
-  mast.addEventListener('touchstart', function (e) {
-    if (e.touches.length === 1) down(e.touches[0].clientX, e.touches[0].clientY, e);
-  }, { passive: true });
-  mast.addEventListener('touchmove', function (e) {
-    if (active && horiz) e.preventDefault();
-    if (e.touches.length === 1) move(e.touches[0].clientX, e.touches[0].clientY);
-  }, { passive: false });
-  mast.addEventListener('touchend', up);
-  mast.addEventListener('touchcancel', up);
+  zones.forEach(attach);
 
-  // мышь (десктоп)
-  var mdown = false;
-  mast.addEventListener('mousedown', function (e) { down(e.clientX, e.clientY, e); mdown = true; });
-  window.addEventListener('mousemove', function (e) { if (mdown) move(e.clientX, e.clientY); });
-  window.addEventListener('mouseup', function () { if (mdown) { mdown = false; up(); } });
-
-  // клавиатура: Alt + стрелка вправо
+  // клавиатура: Alt + стрелка вправо → на соседний берег
   document.addEventListener('keydown', function (e) {
-    if (e.altKey && e.key === 'ArrowRight') location.href = href;
+    if (e.altKey && e.key === 'ArrowRight') {
+      var z = zones[0];
+      location.href = z.getAttribute('data-twin-href') || z.getAttribute('data-nav-href');
+    }
   });
 })();
